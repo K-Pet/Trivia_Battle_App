@@ -25,12 +25,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(var(--hue), 100%, 20%);
-  background: #f5f6fa;
 }
-body.wrapper {
-  display:none;
-  background: #f5f6fa;
-}
+
 
 body.correct {
   --hue: var(--hue-correct);
@@ -39,6 +35,13 @@ body.correct {
 body.wrong {
   --hue: var(--hue-wrong);
 }
+.header {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+
 
 .container {
   width: 800px;
@@ -79,7 +82,7 @@ body.wrong {
   --hue: var(--hue-wrong);
 }
 
-.start-btn, .next-btn {
+.start-btn, .next-btn, .play-btn {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -96,7 +99,7 @@ body.wrong {
 }
 
 .wrapper .sidebar{
-  background: rgb(5, 68, 104);
+  background: rgb(101, 128, 143);
   position: fixed;
   top: 0;
   left: 0;
@@ -121,7 +124,7 @@ position: relative;
 }
 
 .wrapper .sidebar ul li a:hover{
-  background-color: cornflowerblue;
+  background-color: rgb(15, 37, 78);
   cursor: pointer;
 }
 .wrapper .section{

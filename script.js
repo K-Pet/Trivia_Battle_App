@@ -6,12 +6,6 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
-var hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener("click", function(){
-  document.querySelector("body").classList.toggle("active");
-})
-
-
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
